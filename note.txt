@@ -78,3 +78,15 @@ pip install -e .
 That’s it. 🎉 You’re now using **modern Python packaging** in the simplest way.
 
 Let me know if you want a template `pyproject.toml` with extras like `dev` dependencies, test config, or versioning.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+while importing modules from one or two levels up it shows problem on importing modules
+
+for that we have to mention the consider to add a code in beggining of every file 
+
+here is the code: 
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
