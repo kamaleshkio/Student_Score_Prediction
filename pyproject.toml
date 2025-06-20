@@ -15,7 +15,8 @@ dependencies = [
     # These should match your requirements.txt (minus `-e .`)
     "pandas",
     "numpy",
-    "scikit-learn"
+    "scikit-learn",
+    "ipykernel>=6.16.2",
 ]
 
 [tool.setuptools.packages.find]
