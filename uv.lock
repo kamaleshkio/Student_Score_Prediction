@@ -564,6 +564,37 @@ wheels = [
 ]
 
 [[package]]
+name = "dill"
+version = "0.3.7"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version >= '3.7.1' and python_full_version < '3.8' and platform_machine != 'aarch64' and platform_machine != 'arm64'",
+    "python_full_version >= '3.7.1' and python_full_version < '3.8' and platform_machine == 'aarch64'",
+    "python_full_version >= '3.7.1' and python_full_version < '3.8' and platform_machine == 'arm64'",
+    "python_full_version < '3.7.1'",
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c4/31/54dd222e02311c2dbc9e680d37cbd50f4494ce1ee9b04c69980e4ec26f38/dill-0.3.7.tar.gz", hash = "sha256:cc1c8b182eb3013e24bd475ff2e9295af86c1a38eb1aff128dac8962a9ce3c03", size = 183355, upload-time = "2023-07-22T22:18:46.449Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f5/3a/74a29b11cf2cdfcd6ba89c0cecd70b37cd1ba7b77978ce611eb7a146a832/dill-0.3.7-py3-none-any.whl", hash = "sha256:76b122c08ef4ce2eedcd4d1abd8e641114bfc6c2867f49f3c41facf65bf19f5e", size = 115254, upload-time = "2023-07-22T22:18:44.511Z" },
+]
+
+[[package]]
+name = "dill"
+version = "0.4.0"
+source = { registry = "https://pypi.org/simple" }
+resolution-markers = [
+    "python_full_version >= '3.12'",
+    "python_full_version == '3.11.*'",
+    "python_full_version == '3.10.*'",
+    "python_full_version == '3.9.*'",
+    "python_full_version == '3.8.*'",
+]
+sdist = { url = "https://files.pythonhosted.org/packages/12/80/630b4b88364e9a8c8c5797f4602d0f76ef820909ee32f0bacb9f90654042/dill-0.4.0.tar.gz", hash = "sha256:0633f1d2df477324f53a895b02c901fb961bdbf65a17122586ea7019292cbcf0", size = 186976, upload-time = "2025-04-16T00:41:48.867Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/50/3d/9373ad9c56321fdab5b41197068e1d8c25883b3fea29dd361f9b55116869/dill-0.4.0-py3-none-any.whl", hash = "sha256:44f54bf6412c2c8464c14e8243eb163690a9800dbe2c367330883b19c7561049", size = 119668, upload-time = "2025-04-16T00:41:47.671Z" },
+]
+
+[[package]]
 name = "entrypoints"
 version = "0.4"
 source = { registry = "https://pypi.org/simple" }
@@ -3436,6 +3467,8 @@ name = "student-score-prediction"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "dill", version = "0.3.7", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.8'" },
+    { name = "dill", version = "0.4.0", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.8'" },
     { name = "ipykernel", version = "6.16.2", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.8'" },
     { name = "ipykernel", version = "6.29.5", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.8'" },
     { name = "matplotlib", version = "3.5.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.8'" },
@@ -3461,6 +3494,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "dill", specifier = ">=0.3.7" },
     { name = "ipykernel", specifier = ">=6.16.2" },
     { name = "matplotlib", specifier = ">=3.5.3" },
     { name = "numpy" },
