@@ -1,0 +1,80 @@
+Absolutely! Here's the **simplest and cleanest way** to use modern Python packaging with just a `pyproject.toml`.
+
+---
+
+## ✅ Minimal Setup Using `pyproject.toml` Only
+
+### 🔁 1. **Delete `setup.py`**
+
+Remove your `setup.py` file.
+
+---
+
+### 📄 2. **Create this `pyproject.toml` in your project root**
+
+```toml
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "student_score_prediction"
+version = "0.1.0"
+description = "Predicts student scores based on study hours"
+authors = [
+    { name = "Kamalesh", email = "kamaleshbaskaran4310@gmail.com" }
+]
+requires-python = ">=3.7"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit-learn"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+```
+
+✅ This file:
+
+* Replaces `setup.py`
+* Uses `setuptools` as the build system
+* Includes your metadata and dependencies
+
+---
+
+### 📦 3. **Build and install your package**
+
+Install build tool (only once):
+
+```bash
+pip install build
+```
+
+Build your package:
+
+```bash
+python -m build
+```
+
+Then install it:
+
+```bash
+pip install dist/*.whl
+```
+
+---
+
+### 🧪 For development use (optional):
+
+Install your package in editable mode (still works with `pyproject.toml`!):
+
+```bash
+pip install -e .
+```
+
+---
+
+That’s it. 🎉 You’re now using **modern Python packaging** in the simplest way.
+
+Let me know if you want a template `pyproject.toml` with extras like `dev` dependencies, test config, or versioning.

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "student_score_prediction"
+version = "0.1.0"
+description = "A package to predict student scores"
+authors = [
+    { name = "Kamalesh", email = "kamaleshbaskaran4310@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    # These should match your requirements.txt (minus `-e .`)
+    "pandas",
+    "numpy",
+    "scikit-learn"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
