@@ -14,6 +14,11 @@ from src.exception import CustomException
 from src.logger import logging
 from src.utils import save_object
 
+logging.info("Entered to Data_transformation")
+
+sys.path = ['D:\\Projects\\Testing\\Student_Score_prediction\\src\\components', ...]
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 
 @dataclass
 class DataTransformationConfig:
