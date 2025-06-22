@@ -1,12 +1,11 @@
 import os
 import sys
 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.exception import CustomException
 from src.logger import logging
-from src.components.data_transformation import DataTransformationConfig, DataTranformation
-from src.components.model_trainer import ModelTrainerConfig, ModelTrainer
+from src.components.data_transformation import  DataTranformation
+from src.components.model_trainer import ModelTrainer
 
 import pandas as pd
 from dataclasses import dataclass
@@ -61,4 +60,3 @@ if __name__ == "__main__":
     print(modeltrainer.initiate_model_trainer(train_arr, test_arr))
 
 
-sys.path = ['D:\\Projects\\Testing\\Student_Score_prediction\\src\\components', ...]
