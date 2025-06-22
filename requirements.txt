@@ -1,3 +1,11 @@
 pandas
 numpy
 catboost
+numpy
+scikit-learn
+ipykernel
+seaborn
+matplotlib
+dill
+catboost
+xgboost
