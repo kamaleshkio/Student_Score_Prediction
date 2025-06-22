@@ -5,7 +5,7 @@ from src.exception import CustomException
 from src.utils import load_object
 
 class PredictPipeline:
-    def __init__():
+    def __init__(self):
         pass
 
     def predict(self, features):
@@ -47,7 +47,7 @@ class CustomData:
         self.reading_score = reading_score
         self.writing_score = writing_score
 
-    def get_dasta_as_data_frame(self):           
+    def get_data_as_data_frame(self):           
         try:
             Custom_data_input_dict = {
                 "gender": [self.gender],
