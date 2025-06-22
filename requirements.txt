@@ -1,5 +1,4 @@
 pandas
-numpy
 catboost
 numpy
 scikit-learn
