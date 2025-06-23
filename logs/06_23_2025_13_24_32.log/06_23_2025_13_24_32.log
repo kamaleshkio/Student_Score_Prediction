@@ -1,0 +1,17 @@
+[2025-06-23 13:24:35,469] 17 root - INFO - Entered to Data_transformation
+[2025-06-23 13:24:36,622] 27 root - INFO - Data Ingestion method starts
+[2025-06-23 13:24:36,630] 30 root - INFO - Dataset read as Pandas DataFrame
+[2025-06-23 13:24:36,633] 35 root - INFO - Train test split Initiated
+[2025-06-23 13:24:36,642] 40 root - INFO - Ingestion of the data is completed
+[2025-06-23 13:24:36,642] 83 root - INFO - Data Transformation initiated
+[2025-06-23 13:24:36,675] 89 root - INFO - Train and Test data read as Pandas DataFrame
+[2025-06-23 13:24:36,675] 64 root - INFO - Numerical Columns: ['writing_score', 'reading_score']
+[2025-06-23 13:24:36,675] 65 root - INFO - Categorical Columns: ['gender', 'race_ethnicity', 'parental_level_of_education', 'lunch', 'test_preparation_course']
+[2025-06-23 13:24:36,675] 72 root - INFO - Preprocessor object created successfully
+[2025-06-23 13:24:36,675] 105 root - INFO - Preprocessing the training and testing Data Frame.
+[2025-06-23 13:24:36,713] 118 root - INFO - Preprocessed object saved...
+[2025-06-23 13:24:36,715] 33 root - INFO - Splitting Training and Test Dataset
+[2025-06-23 13:26:21,463] 99 root - INFO - Models ----->   
+
+ {'Random Forest': 0.8241858349122366, 'Decision Tree': 0.6602829423943384, 'Gradient Boosting': 0.837718573732328, 'Linear Regressor': 0.8450921708959813, 'XGBRegressor': 0.8213056589749441, 'CatBoosting Regressor': 0.8330912526162427, 'AdaBoost Regressor': 0.8079890034555751} 
+[2025-06-23 13:26:21,463] 100 root - INFO - Best found model on both training and testing dataset : LinearRegression()

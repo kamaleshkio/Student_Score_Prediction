@@ -8,3 +8,5 @@ matplotlib
 dill
 catboost
 xgboost
+scipy
+streamlit

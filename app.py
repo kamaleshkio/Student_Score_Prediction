@@ -68,3 +68,6 @@ if st.button("Predict Math Score"):
     results = predict_pipeline.predict(pred_df)
 
     st.success(f"Predicticted Math Score: ----> {results[0]: .2f} ")
+
+
+
