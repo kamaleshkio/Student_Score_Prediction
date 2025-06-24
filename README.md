@@ -1,7 +1,7 @@
-title: Student Score Perdiction
-emoji: 🤗
-colorFrame: blue
-colorTo: red
-sdk: streamlit
-app_file: app.py
+title: Student Score Prediction
+emoji: 📚
+colorFrom: gray
+colorTo: green
+sdk: docker
 pinned: false
+license: mit
