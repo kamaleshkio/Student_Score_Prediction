@@ -36,9 +36,6 @@ jobs:
       - name: Configure Git and Push
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "Kamaleshbaskaran"
-          git remote set-url origin https://Kamaleshbaskaran:${HF_TOKEN}@huggingface.co/spaces/Kamaleshbaskaran/student-score-prediction
-          git pull origin main --rebase || true
-          git push origin main
+        run: 
+          git push --force https://huggingface.co/spaces/Kamaleshbaskaran/student-score-prediction
+
