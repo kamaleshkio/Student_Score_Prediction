@@ -37,5 +37,5 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          git remote set-url origin https://huggingface.co/spaces/Kamaleshbaskaran/student-score-prediction
+          git remote set-url origin https://Kamaleshbaskaran:${HF_TOKEN}@huggingface.co/spaces/Kamaleshbaskaran/student-score-prediction
           git push origin main
