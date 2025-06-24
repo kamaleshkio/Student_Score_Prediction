@@ -39,5 +39,5 @@ GitHub Actions (CI/CD)
 Hugging Face Spaces (deployment)
 
 📌 Live Demo
-👉 [Check it out on Hugging Face]([url](https://huggingface.co/spaces/Kamaleshbaskaran/student-score-prediction))
+👉 [Check it out on Hugging Face]((https://huggingface.co/spaces/Kamaleshbaskaran/student-score-prediction)
 
