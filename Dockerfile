@@ -11,19 +11,8 @@ WORKDIR /app
 # Copy source code
 COPY . .
 
-# Update system packages and clean up
-RUN [⚠️ Suspicious Content] # Use a lightweight base image
-FROM python:3.11-slim-bookworm
-
-# Prevent Python from writing .pyc files and buffer logs for better visibility
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONUNBUFFERED=1
-
-# Set working directory
-WORKDIR /app
-
-# Copy source code
-COPY . .
+# Create writable logs directory
+RUN mkdir -p /app/logs && chmod -R 777 /app/logs
 
 # Update system packages and clean up
 RUN apt-get update && \
