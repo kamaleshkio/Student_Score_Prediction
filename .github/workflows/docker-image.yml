@@ -33,10 +33,13 @@ jobs:
           fetch-depth: 0
           lfs: true
 
-      - name: Configure Git and Push
+      - name: Configure Git and Sync with Hugging Face
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: 
-          git push --force https://Kamaleshbaskaran:${HF_TOKEN}@huggingface.co/spaces/Kamaleshbaskaran/student-score-prediction
+        run: |
+          git config user.email "kamalehsbaskran4310@gmail.com"
+          git config user.name "Kamalesh"
+          git remote add hf https://Kamaleshbaskaran:${HF_TOKEN}@huggingface.co/spaces/Kamaleshbaskaran/student-score-prediction
+          git fetch hf main
 
 
