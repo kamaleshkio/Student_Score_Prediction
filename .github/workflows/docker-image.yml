@@ -42,6 +42,6 @@ jobs:
           git remote add hf https://Kamaleshbaskaran:${HF_TOKEN}@huggingface.co/spaces/Kamaleshbaskaran/student-score-prediction
           git fetch hf main
           git rebase hf/main
-          git push hf main
+          git push hf HEAD:main --force
 
 
